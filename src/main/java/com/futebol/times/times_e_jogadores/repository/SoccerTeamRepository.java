@@ -1,4 +1,4 @@
-package com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.repository;
+package com.futebol.times.times_e_jogadores.repository;
 
 
 
@@ -6,7 +6,7 @@ import java.util.List;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
-import com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.domain.SoccerTeam;
+import com.futebol.times.times_e_jogadores.domain.SoccerTeam;
 
 public interface SoccerTeamRepository extends JpaRepository<SoccerTeam,Long> {
 		

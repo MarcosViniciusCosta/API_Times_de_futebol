@@ -1,4 +1,4 @@
-package com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.domain;
+package com.futebol.times.times_e_jogadores.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

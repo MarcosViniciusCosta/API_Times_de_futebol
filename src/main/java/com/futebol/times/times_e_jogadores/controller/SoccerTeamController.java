@@ -1,4 +1,4 @@
-package com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.controller;
+package com.futebol.times.times_e_jogadores.controller;
 
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.DTO.SoccerTeamRequestPostDTO;
-import com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.DTO.SoccerTeamRequestPutDTO;
-import com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.domain.SoccerTeam;
-import com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.service.SoccerTeamService;
+import com.futebol.times.times_e_jogadores.DTO.SoccerTeamRequestPostDTO;
+import com.futebol.times.times_e_jogadores.DTO.SoccerTeamRequestPutDTO;
+import com.futebol.times.times_e_jogadores.domain.SoccerTeam;
+import com.futebol.times.times_e_jogadores.service.SoccerTeamService;
 
 import lombok.RequiredArgsConstructor;
 
@@ -41,7 +41,7 @@ public class SoccerTeamController
 
 	}
 
-	@GetMapping(path = "/{id}")
+	@GetMapping(path = "/findById/{id}")
 	public ResponseEntity<SoccerTeam> findById(@PathVariable long id)
 	{
 		return ResponseEntity.ok(soccerTeamService.findByIdOrThrowBadRequestException(id));

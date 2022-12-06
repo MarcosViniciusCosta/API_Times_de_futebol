@@ -1,4 +1,4 @@
-package com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.com.futebol.times.times_e_jogadores.DTO;
+package com.futebol.times.times_e_jogadores.DTO;
 
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
